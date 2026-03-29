@@ -1,0 +1,16 @@
+langchain==0.3.28
+langchain-community==0.3.31
+langchain-core==0.3.83
+langchain-openai==0.3.35
+langchain-text-splitters==0.3.11
+chromadb==1.5.5
+pypdf==6.9.2
+tiktoken==0.12.0
+openai==2.30.0
+streamlit==1.50.0
+python-dotenv==1.2.1
+tqdm==4.67.3
+unstructured==0.18.3
+nltk==3.9.2
+numpy==2.0.2
+pandas==2.3.3

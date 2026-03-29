@@ -1,0 +1,28 @@
+# Virtual Environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (PDFs and chunks are large)
+data/pdfs/*.pdf
+data/chunks/*.pkl
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Streamlit
+.streamlit/cache/
+
+# Model files
+models/
+
+# Logs
+*.log
