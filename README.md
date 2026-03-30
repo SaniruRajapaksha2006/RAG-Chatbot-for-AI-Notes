@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-0.3.28-green.svg)](https://www.langchain.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-red.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A Retrieval-Augmented Generation (RAG) chatbot that answers questions about your AI and Data Science lecture notes, textbooks, and course materials. Get accurate answers with source citations from your own documents.
 
