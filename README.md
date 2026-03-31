@@ -51,7 +51,9 @@ RAG-Chatbot-AI-Notes/
 │   ├── vector_store.py     # ChromaDB vector database operations
 │   └── rag_chain.py        # Complete RAG pipeline
 ├── app/
-│   └── app.py              # Streamlit web interface (coming soon)
+│   └── app.py              
+├── streamlit/
+│   └── config.toml 
 ├── data/
 │   ├── pdfs/               # Place your PDFs here
 │   ├── chunks/             # Processed text chunks
@@ -114,8 +116,11 @@ python test_loader.py
 ### Run the RAG Chatbot
 
 ```bash
-# Interactive Q&A with your documents
-python test_rag.py
+# Terminal 1: Start Ollama
+ollama serve
+
+# Terminal 2: Run Streamlit
+streamlit run app/app.py
 
 # Ask questions like:
 # - "What is machine learning?"
@@ -125,9 +130,9 @@ python test_rag.py
 
 ---
 
-## 📋 Day-by-Day Progress
+## 📋 Progress
 
-### Day 1: Foundation
+### Foundation
 - Project structure created
 - Virtual environment setup
 - Dependencies installed (LangChain, ChromaDB, PyPDF)
@@ -135,7 +140,7 @@ python test_rag.py
 - Text chunking with overlapping windows
 - Git repository initialized and pushed
 
-### Day 2: RAG Pipeline
+### RAG Pipeline
 - Embeddings module (Sentence Transformers for local, OpenAI as alternative)
 - Vector store with ChromaDB
 - RAG chain integrating retrieval and generation
@@ -143,11 +148,13 @@ python test_rag.py
 - Source citations with similarity scores
 - Interactive Q&A testing
 
-### Day 3: Deployment *(Coming Soon)*
-- Streamlit web interface
-- Live deployment to Streamlit Cloud
-- GitHub release with pre-trained models
-- Project documentation and portfolio polish
+### Web Interface & Deployment
+- Streamlit web interface with chat UI
+- Custom theme and styling
+- Source citations with expandable sections
+- Chat history persistence
+- Clear chat functionality
+- Deployment configuration (packages.txt, .streamlit/config.toml)
 
 ---
 
@@ -160,7 +167,7 @@ python test_rag.py
 | Embeddings | Sentence Transformers (`all-MiniLM-L6-v2`) | Text to vectors |
 | Vector DB | ChromaDB | Store and search embeddings |
 | Document Processing | PyPDF | Extract text from PDFs |
-| Web Interface | Streamlit | User interface *(coming soon)* |
+| Web Interface | Streamlit | User interface |
 
 ---
 
